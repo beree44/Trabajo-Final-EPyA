@@ -75,16 +75,6 @@ int main() {
     return 0; // Indica que el programa finalizó correctamente
 }
 
-// --- Implementación de Funciones ---
-
-// Limpia la pantalla de la consola. Compatible con Windows y sistemas Unix/Linux.
-void limpiarPantalla() {
-    #ifdef _WIN32 // Si se compila en Windows
-        system("cls");
-    #else // Si se compila en sistemas Unix/Linux
-        system("clear");
-    #endif
-}
 
 // Muestra el menú principal de la aplicación.
 void mostrarMenuPrincipal(char nombre[]) {
